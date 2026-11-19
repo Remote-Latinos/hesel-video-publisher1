@@ -24,7 +24,7 @@ function youtubeClient() {
 }
 
 // Health check (Railway + Make can ping this)
-app.get("/health", (_req, res) => res.json({ ok: true }));
+app.get("/health", (_req, res) => res.json({ ok: true, build: "videos-list-fix-2026-11-19" }));
 
 /**
  * Download the source to a temp file FIRST, validating it is really a video.
